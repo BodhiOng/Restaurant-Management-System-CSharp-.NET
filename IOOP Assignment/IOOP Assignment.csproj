@@ -12,6 +12,10 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+<<<<<<< HEAD
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+=======
+>>>>>>> 4d2f588252e8ed6e8fe2e099f2a9c7f2fbe156ff
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +28,10 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+<<<<<<< HEAD
+=======
     <IsWebBootstrapper>false</IsWebBootstrapper>
+>>>>>>> 4d2f588252e8ed6e8fe2e099f2a9c7f2fbe156ff
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -111,6 +118,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
     <Content Include="DRDatabase.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -120,6 +129,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+>>>>>>> 4d2f588252e8ed6e8fe2e099f2a9c7f2fbe156ff
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
@@ -131,5 +141,17 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+<<<<<<< HEAD
+  <ItemGroup>
+    <Content Include="DRDatabase.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DRDatabase_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DRDatabase.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+=======
+>>>>>>> 4d2f588252e8ed6e8fe2e099f2a9c7f2fbe156ff
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,6 +6,9 @@
         <Connections>
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DRDatabaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DRDatabaseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.IOOP_Assignment.Properties.Settings.GlobalReference.Default.DRDatabaseConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
+<<<<<<< HEAD
+        <Tables />
+=======
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="login_databaseTableAdapter" GeneratorDataComponentClassName="login_databaseTableAdapter" Name="login_database" UserDataComponentName="login_databaseTableAdapter">
             <MainSource>
@@ -65,12 +68,17 @@ SELECT id, username, password, role FROM login_database WHERE (id = @id)</Comman
             <Sources />
           </TableAdapter>
         </Tables>
+>>>>>>> 4d2f588252e8ed6e8fe2e099f2a9c7f2fbe156ff
         <Sources />
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
   <xs:element name="DRDatabaseDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DRDatabaseDataSet" msprop:Generator_DataSetName="DRDatabaseDataSet">
     <xs:complexType>
+<<<<<<< HEAD
+      <xs:choice minOccurs="0" maxOccurs="unbounded" />
+    </xs:complexType>
+=======
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="login_database" msprop:Generator_RowEvHandlerName="login_databaseRowChangeEventHandler" msprop:Generator_RowDeletedName="login_databaseRowDeleted" msprop:Generator_RowDeletingName="login_databaseRowDeleting" msprop:Generator_RowEvArgName="login_databaseRowChangeEvent" msprop:Generator_TablePropName="login_database" msprop:Generator_RowChangedName="login_databaseRowChanged" msprop:Generator_RowChangingName="login_databaseRowChanging" msprop:Generator_TableClassName="login_databaseDataTable" msprop:Generator_RowClassName="login_databaseRow" msprop:Generator_TableVarName="tablelogin_database" msprop:Generator_UserTableName="login_database">
           <xs:complexType>
@@ -106,5 +114,6 @@ SELECT id, username, password, role FROM login_database WHERE (id = @id)</Comman
       <xs:selector xpath=".//mstns:login_database" />
       <xs:field xpath="mstns:id" />
     </xs:unique>
+>>>>>>> 4d2f588252e8ed6e8fe2e099f2a9c7f2fbe156ff
   </xs:element>
 </xs:schema>

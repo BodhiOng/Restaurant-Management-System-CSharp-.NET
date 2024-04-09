@@ -24,8 +24,11 @@ namespace IOOP_Assignment {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class DRDatabaseDataSet : global::System.Data.DataSet {
         
+<<<<<<< HEAD
+=======
         private login_databaseDataTable tablelogin_database;
         
+>>>>>>> 4d2f588252e8ed6e8fe2e099f2a9c7f2fbe156ff
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -54,9 +57,12 @@ namespace IOOP_Assignment {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
+<<<<<<< HEAD
+=======
                 if ((ds.Tables["login_database"] != null)) {
                     base.Tables.Add(new login_databaseDataTable(ds.Tables["login_database"]));
                 }
+>>>>>>> 4d2f588252e8ed6e8fe2e099f2a9c7f2fbe156ff
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -77,6 +83,8 @@ namespace IOOP_Assignment {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< HEAD
+=======
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
         public login_databaseDataTable login_database {
@@ -87,6 +95,7 @@ namespace IOOP_Assignment {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+>>>>>>> 4d2f588252e8ed6e8fe2e099f2a9c7f2fbe156ff
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -152,9 +161,12 @@ namespace IOOP_Assignment {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
+<<<<<<< HEAD
+=======
                 if ((ds.Tables["login_database"] != null)) {
                     base.Tables.Add(new login_databaseDataTable(ds.Tables["login_database"]));
                 }
+>>>>>>> 4d2f588252e8ed6e8fe2e099f2a9c7f2fbe156ff
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -188,12 +200,15 @@ namespace IOOP_Assignment {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
+<<<<<<< HEAD
+=======
             this.tablelogin_database = ((login_databaseDataTable)(base.Tables["login_database"]));
             if ((initTable == true)) {
                 if ((this.tablelogin_database != null)) {
                     this.tablelogin_database.InitVars();
                 }
             }
+>>>>>>> 4d2f588252e8ed6e8fe2e099f2a9c7f2fbe156ff
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -204,6 +219,8 @@ namespace IOOP_Assignment {
             this.Namespace = "http://tempuri.org/DRDatabaseDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
+<<<<<<< HEAD
+=======
             this.tablelogin_database = new login_databaseDataTable();
             base.Tables.Add(this.tablelogin_database);
         }
@@ -212,6 +229,7 @@ namespace IOOP_Assignment {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private bool ShouldSerializelogin_database() {
             return false;
+>>>>>>> 4d2f588252e8ed6e8fe2e099f2a9c7f2fbe156ff
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -268,6 +286,8 @@ namespace IOOP_Assignment {
             xs.Add(dsSchema);
             return type;
         }
+<<<<<<< HEAD
+=======
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void login_databaseRowChangeEventHandler(object sender, login_databaseRowChangeEvent e);
@@ -1481,6 +1501,7 @@ SELECT id, username, password, role FROM login_database WHERE (id = @id)";
                 }
             }
         }
+>>>>>>> 4d2f588252e8ed6e8fe2e099f2a9c7f2fbe156ff
     }
 }
 
