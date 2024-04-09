@@ -1,0 +1,12 @@
+C:\Users\bodhi\source\repos\IOOP Assignment\IOOP Assignment\bin\Debug\IOOP Assignment.exe.config
+C:\Users\bodhi\source\repos\IOOP Assignment\IOOP Assignment\bin\Debug\IOOP Assignment.exe
+C:\Users\bodhi\source\repos\IOOP Assignment\IOOP Assignment\bin\Debug\IOOP Assignment.pdb
+C:\Users\bodhi\source\repos\IOOP Assignment\IOOP Assignment\obj\Debug\IOOP Assignment.csproj.AssemblyReference.cache
+C:\Users\bodhi\source\repos\IOOP Assignment\IOOP Assignment\obj\Debug\IOOP_Assignment.Login.resources
+C:\Users\bodhi\source\repos\IOOP Assignment\IOOP Assignment\obj\Debug\IOOP_Assignment.Properties.Resources.resources
+C:\Users\bodhi\source\repos\IOOP Assignment\IOOP Assignment\obj\Debug\IOOP Assignment.csproj.GenerateResource.cache
+C:\Users\bodhi\source\repos\IOOP Assignment\IOOP Assignment\obj\Debug\IOOP Assignment.csproj.CoreCompileInputs.cache
+C:\Users\bodhi\source\repos\IOOP Assignment\IOOP Assignment\obj\Debug\IOOP Assignment.exe
+C:\Users\bodhi\source\repos\IOOP Assignment\IOOP Assignment\obj\Debug\IOOP Assignment.pdb
+C:\Users\bodhi\source\repos\IOOP Assignment\IOOP Assignment\bin\Debug\DRDatabase.mdf
+C:\Users\bodhi\source\repos\IOOP Assignment\IOOP Assignment\bin\Debug\DRDatabase_log.ldf
