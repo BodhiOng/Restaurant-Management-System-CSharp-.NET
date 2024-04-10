@@ -57,7 +57,7 @@ namespace IOOP_Assignment
                         {
                             if (reader.Read())
                             {
-                                MessageBox.Show("Login succesful!");
+                                MessageBox.Show("Login successful!");
                             }
                             else
                             {
