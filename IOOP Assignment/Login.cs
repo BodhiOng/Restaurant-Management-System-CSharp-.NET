@@ -40,37 +40,59 @@ namespace IOOP_Assignment
 
             string connectionString = Properties.Settings.Default.DRDatabaseConnectionString;
 
-            string query = "SELECT * FROM login_database WHERE username = @Username AND password = @Password";
+            string loginQuery = "SELECT * FROM login_database WHERE username = @Username AND password = @Password";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                try
+                connection.Open();
+
+                using (SqlTransaction transaction = connection.BeginTransaction())
                 {
-                    connection.Open();
-
-                    using (SqlCommand command = new SqlCommand(query, connection))
+                    try
                     {
-                        command.Parameters.AddWithValue("@Username", username);
-                        command.Parameters.AddWithValue("@Password", password);
-
-                        using (SqlDataReader reader = command.ExecuteReader())
+                        using (SqlCommand command = new SqlCommand(loginQuery, connection, transaction))
                         {
-                            if (reader.Read())
+                            command.Parameters.AddWithValue("@Username", username);
+                            command.Parameters.AddWithValue("@Password", password);
+
+                            using (SqlDataReader reader = command.ExecuteReader())
                             {
-                                MessageBox.Show("Login successful!");
-                            }
-                            else
-                            {
-                                MessageBox.Show("Invalid username or password");
+                                if (reader.HasRows)
+                                {   
+                                    reader.Read();
+
+                                    string role = reader["role"].ToString();
+                                    if (role.ToLower() == "admin")
+                                    {
+                                        Admin adminForm = new Admin();
+                                        adminForm.Show();
+
+                                        reader.Close();
+
+                                        string logStatusQuery = "INSERT INTO log_status (username, role) VALUES (@Username, 'admin')";
+
+                                        using (SqlCommand logStatusCommand = new SqlCommand(logStatusQuery, connection, transaction))
+                                        {
+                                            logStatusCommand.Parameters.AddWithValue("@Username", username);
+                                            logStatusCommand.ExecuteNonQuery();
+                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Invalid username or password");
+                                }
                             }
                         }
 
+                        transaction.Commit();
                     }
-                }
 
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Error: {ex.Message}");
+                    catch (Exception ex) 
+                    { 
+                        transaction.Rollback();
+                        MessageBox.Show($"Error: {ex.Message}");
+                    }
                 }
             }
         }
