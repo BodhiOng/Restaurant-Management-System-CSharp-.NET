@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bodhi\\OneDrive\\Documents\\VS Files\\source\\repos\\Introduction-To-Object-Oriented-Programming-Semester-2-Assignment\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C3419D24-1B81-42D0-B8F2-7E93387CA8EE}|IOOP Assignment\\IOOP Assignment.csproj|c:\\users\\bodhi\\onedrive\\documents\\vs files\\source\\repos\\introduction-to-object-oriented-programming-semester-2-assignment\\ioop assignment\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C3419D24-1B81-42D0-B8F2-7E93387CA8EE}|IOOP Assignment\\IOOP Assignment.csproj|solutionrelative:ioop assignment\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\bodhi\\OneDrive\\Documents\\VS Files\\source\\repos\\Introduction-To-Object-Oriented-Programming-Semester-2-Assignment\\IOOP Assignment\\Login.cs",
+              "RelativeDocumentMoniker": "IOOP Assignment\\Login.cs",
+              "ToolTip": "C:\\Users\\bodhi\\OneDrive\\Documents\\VS Files\\source\\repos\\Introduction-To-Object-Oriented-Programming-Semester-2-Assignment\\IOOP Assignment\\Login.cs [Design]",
+              "RelativeToolTip": "IOOP Assignment\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T11:46:28.803Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 81,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
