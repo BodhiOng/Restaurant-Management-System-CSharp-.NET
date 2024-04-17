@@ -30,14 +30,13 @@
         {
             this.linklbl_backtologin = new System.Windows.Forms.LinkLabel();
             this.panel_footerbar = new System.Windows.Forms.Panel();
-            this.uc_manageusers = new IOOP_Assignment.AdminManageUsers();
             this.linklbl_adminhomepage = new System.Windows.Forms.LinkLabel();
             this.lbl_greetings = new System.Windows.Forms.Label();
             this.btn_functionality4 = new System.Windows.Forms.Button();
             this.btn_functionality3 = new System.Windows.Forms.Button();
             this.btn_functionality2 = new System.Windows.Forms.Button();
             this.btn_functionality1 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.uc_manageusers = new IOOP_Assignment.AdminManageUsers();
             this.panel_footerbar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +44,7 @@
             // 
             this.linklbl_backtologin.AutoSize = true;
             this.linklbl_backtologin.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linklbl_backtologin.Location = new System.Drawing.Point(1636, 34);
+            this.linklbl_backtologin.Location = new System.Drawing.Point(1626, 34);
             this.linklbl_backtologin.Name = "linklbl_backtologin";
             this.linklbl_backtologin.Size = new System.Drawing.Size(171, 32);
             this.linklbl_backtologin.TabIndex = 5;
@@ -58,19 +57,10 @@
             this.panel_footerbar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.panel_footerbar.Controls.Add(this.linklbl_adminhomepage);
             this.panel_footerbar.Controls.Add(this.linklbl_backtologin);
-            this.panel_footerbar.Location = new System.Drawing.Point(-10, 910);
+            this.panel_footerbar.Location = new System.Drawing.Point(0, 910);
             this.panel_footerbar.Name = "panel_footerbar";
-            this.panel_footerbar.Size = new System.Drawing.Size(1911, 112);
+            this.panel_footerbar.Size = new System.Drawing.Size(1904, 112);
             this.panel_footerbar.TabIndex = 6;
-            // 
-            // uc_manageusers
-            // 
-            this.uc_manageusers.BackColor = System.Drawing.Color.White;
-            this.uc_manageusers.Location = new System.Drawing.Point(0, 0);
-            this.uc_manageusers.Name = "uc_manageusers";
-            this.uc_manageusers.Size = new System.Drawing.Size(1911, 904);
-            this.uc_manageusers.TabIndex = 8;
-            this.uc_manageusers.Load += new System.EventHandler(this.adminManageUsers1_Load_1);
             // 
             // linklbl_adminhomepage
             // 
@@ -88,12 +78,13 @@
             // 
             this.lbl_greetings.AutoSize = true;
             this.lbl_greetings.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Bold);
-            this.lbl_greetings.Location = new System.Drawing.Point(265, 110);
+            this.lbl_greetings.Location = new System.Drawing.Point(311, 132);
             this.lbl_greetings.Name = "lbl_greetings";
             this.lbl_greetings.Size = new System.Drawing.Size(1413, 279);
             this.lbl_greetings.TabIndex = 14;
             this.lbl_greetings.Text = "Welcome, Admin!\r\n\r\nClick a button to use a functionality:";
             this.lbl_greetings.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbl_greetings.Click += new System.EventHandler(this.lbl_greetings_Click);
             // 
             // btn_functionality4
             // 
@@ -136,6 +127,7 @@
             this.btn_functionality2.TabIndex = 11;
             this.btn_functionality2.Text = "View sales report";
             this.btn_functionality2.UseVisualStyleBackColor = false;
+            this.btn_functionality2.Click += new System.EventHandler(this.btn_functionality2_Click);
             // 
             // btn_functionality1
             // 
@@ -152,27 +144,30 @@
             this.btn_functionality1.UseVisualStyleBackColor = false;
             this.btn_functionality1.Click += new System.EventHandler(this.btn_functionality1_Click);
             // 
-            // panel1
+            // uc_manageusers
             // 
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1901, 923);
-            this.panel1.TabIndex = 15;
+            this.uc_manageusers.BackColor = System.Drawing.Color.Transparent;
+            this.uc_manageusers.Location = new System.Drawing.Point(-7, -2);
+            this.uc_manageusers.Margin = new System.Windows.Forms.Padding(4);
+            this.uc_manageusers.Name = "uc_manageusers";
+            this.uc_manageusers.Size = new System.Drawing.Size(1911, 915);
+            this.uc_manageusers.TabIndex = 15;
+            this.uc_manageusers.Load += new System.EventHandler(this.uc_manageusers_Load);
             // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1894, 1009);
-            this.Controls.Add(this.lbl_greetings);
+            this.Controls.Add(this.uc_manageusers);
             this.Controls.Add(this.btn_functionality4);
             this.Controls.Add(this.btn_functionality3);
             this.Controls.Add(this.btn_functionality2);
             this.Controls.Add(this.btn_functionality1);
             this.Controls.Add(this.panel_footerbar);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.uc_manageusers);
+            this.Controls.Add(this.lbl_greetings);
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
@@ -187,13 +182,12 @@
         #endregion
         private System.Windows.Forms.LinkLabel linklbl_backtologin;
         private System.Windows.Forms.Panel panel_footerbar;
-        private AdminManageUsers uc_manageusers;
         private System.Windows.Forms.LinkLabel linklbl_adminhomepage;
         private System.Windows.Forms.Label lbl_greetings;
         private System.Windows.Forms.Button btn_functionality4;
         private System.Windows.Forms.Button btn_functionality3;
         private System.Windows.Forms.Button btn_functionality2;
         private System.Windows.Forms.Button btn_functionality1;
-        private System.Windows.Forms.Panel panel1;
+        private AdminManageUsers uc_manageusers;
     }
 }

@@ -15,6 +15,7 @@ namespace IOOP_Assignment
         public Admin()
         {
             InitializeComponent();
+            uc_manageusers.Hide();
         }
 
         private void linklbl_backtologin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -46,9 +47,39 @@ namespace IOOP_Assignment
         }
 
         private void btn_functionality1_Click(object sender, EventArgs e)
-        {
+        { 
             uc_manageusers.Show();
             uc_manageusers.BringToFront();
+        }
+
+        private void lbl_greetings_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void adminManageUsers1_Load_2(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void adminManageUsers1_Load_3(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void uc_manageusers_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_functionality2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

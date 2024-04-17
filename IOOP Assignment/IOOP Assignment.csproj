@@ -73,10 +73,11 @@
     <Compile Include="AdminManageUsers.Designer.cs">
       <DependentUpon>AdminManageUsers.cs</DependentUpon>
     </Compile>
-    <Compile Include="DRDatabase_logindatabase.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DRDatabase_logindatabase.xsd</DependentUpon>
+    <Compile Include="AdminViewSalesReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminViewSalesReport.Designer.cs">
+      <DependentUpon>AdminViewSalesReport.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -92,6 +93,9 @@
     <EmbeddedResource Include="AdminManageUsers.resx">
       <DependentUpon>AdminManageUsers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdminViewSalesReport.resx">
+      <DependentUpon>AdminViewSalesReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,18 +107,8 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="DRDatabase_logindatabase.xsc">
-      <DependentUpon>DRDatabase_logindatabase.xsd</DependentUpon>
-    </None>
-    <None Include="DRDatabase_logindatabase.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DRDatabase_logindatabase.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DRDatabase_logindatabase.xss">
-      <DependentUpon>DRDatabase_logindatabase.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -141,13 +135,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DRDatabase.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DRDatabase_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>DRDatabase.mdf</DependentUpon>
-    </Content>
+    <Content Include="images\add-button_5974633.png" />
+    <Content Include="images\delete-button_5974771.png" />
+    <Content Include="images\edit-button.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

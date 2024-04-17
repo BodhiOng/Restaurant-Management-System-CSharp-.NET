@@ -38,11 +38,11 @@ namespace IOOP_Assignment
             string username = txtbxUsername.Text;
             string password = txbxPassword.Text;
 
-            string connectionString = Properties.Settings.Default.DRDatabaseConnectionString;
+            SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DRDatabase.mdf;Integrated Security=True;Connect Timeout=30");
 
             string loginQuery = "SELECT * FROM login_database WHERE username = @Username AND password = @Password";
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (connection)
             {
                 connection.Open();
 
@@ -78,6 +78,8 @@ namespace IOOP_Assignment
                         MessageBox.Show($"Error: {ex.Message}");
                     }
                 }
+
+                connection.Close();
             }
         }
 

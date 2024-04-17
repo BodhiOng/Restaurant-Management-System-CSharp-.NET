@@ -35,6 +35,7 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.panel_loginbg = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // lblLogin
@@ -118,10 +119,19 @@
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // panel_loginbg
+            // 
+            this.panel_loginbg.AutoSize = true;
+            this.panel_loginbg.Location = new System.Drawing.Point(0, 0);
+            this.panel_loginbg.Name = "panel_loginbg";
+            this.panel_loginbg.Size = new System.Drawing.Size(1896, 1008);
+            this.panel_loginbg.TabIndex = 7;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1894, 1009);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnLogin);
@@ -130,6 +140,7 @@
             this.Controls.Add(this.txbxPassword);
             this.Controls.Add(this.txtbxUsername);
             this.Controls.Add(this.lblLogin);
+            this.Controls.Add(this.panel_loginbg);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
@@ -148,5 +159,6 @@
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Panel panel_loginbg;
     }
 }
