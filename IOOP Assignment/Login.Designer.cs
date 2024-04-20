@@ -64,6 +64,7 @@
             this.txbxPassword.Font = new System.Drawing.Font("Arial", 20F);
             this.txbxPassword.Location = new System.Drawing.Point(880, 490);
             this.txbxPassword.Name = "txbxPassword";
+            this.txbxPassword.PasswordChar = '*';
             this.txbxPassword.Size = new System.Drawing.Size(504, 69);
             this.txbxPassword.TabIndex = 2;
             // 
@@ -126,6 +127,7 @@
             this.panel_loginbg.Name = "panel_loginbg";
             this.panel_loginbg.Size = new System.Drawing.Size(1896, 1008);
             this.panel_loginbg.TabIndex = 7;
+            this.panel_loginbg.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_loginbg_Paint);
             // 
             // Login
             // 

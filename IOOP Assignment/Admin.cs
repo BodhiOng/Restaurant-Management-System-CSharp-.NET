@@ -16,6 +16,7 @@ namespace IOOP_Assignment
         {
             InitializeComponent();
             uc_manageusers.Hide();
+            uc_viewsalesreport.Hide();
         }
 
         private void linklbl_backtologin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -39,6 +40,7 @@ namespace IOOP_Assignment
         private void linklbl_adminhomepage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             uc_manageusers.Hide();
+            uc_viewsalesreport.Hide();
         }
 
         private void adminManageUsers1_Load_1(object sender, EventArgs e)
@@ -79,7 +81,8 @@ namespace IOOP_Assignment
 
         private void btn_functionality2_Click(object sender, EventArgs e)
         {
-
+            uc_viewsalesreport.Show();
+            uc_viewsalesreport.BringToFront();
         }
     }
 }

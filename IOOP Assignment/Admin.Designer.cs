@@ -36,6 +36,7 @@
             this.btn_functionality3 = new System.Windows.Forms.Button();
             this.btn_functionality2 = new System.Windows.Forms.Button();
             this.btn_functionality1 = new System.Windows.Forms.Button();
+            this.uc_viewsalesreport = new IOOP_Assignment.AdminViewSalesReport();
             this.uc_manageusers = new IOOP_Assignment.AdminManageUsers();
             this.panel_footerbar.SuspendLayout();
             this.SuspendLayout();
@@ -54,12 +55,14 @@
             // 
             // panel_footerbar
             // 
+            this.panel_footerbar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.panel_footerbar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.panel_footerbar.Controls.Add(this.linklbl_adminhomepage);
             this.panel_footerbar.Controls.Add(this.linklbl_backtologin);
             this.panel_footerbar.Location = new System.Drawing.Point(0, 910);
+            this.panel_footerbar.Margin = new System.Windows.Forms.Padding(0);
             this.panel_footerbar.Name = "panel_footerbar";
-            this.panel_footerbar.Size = new System.Drawing.Size(1904, 112);
+            this.panel_footerbar.Size = new System.Drawing.Size(1900, 112);
             this.panel_footerbar.TabIndex = 6;
             // 
             // linklbl_adminhomepage
@@ -144,13 +147,21 @@
             this.btn_functionality1.UseVisualStyleBackColor = false;
             this.btn_functionality1.Click += new System.EventHandler(this.btn_functionality1_Click);
             // 
+            // uc_viewsalesreport
+            // 
+            this.uc_viewsalesreport.Location = new System.Drawing.Point(0, 0);
+            this.uc_viewsalesreport.Margin = new System.Windows.Forms.Padding(0);
+            this.uc_viewsalesreport.Name = "uc_viewsalesreport";
+            this.uc_viewsalesreport.Size = new System.Drawing.Size(1900, 913);
+            this.uc_viewsalesreport.TabIndex = 16;
+            // 
             // uc_manageusers
             // 
             this.uc_manageusers.BackColor = System.Drawing.Color.Transparent;
-            this.uc_manageusers.Location = new System.Drawing.Point(-7, -2);
-            this.uc_manageusers.Margin = new System.Windows.Forms.Padding(4);
+            this.uc_manageusers.Location = new System.Drawing.Point(0, 0);
+            this.uc_manageusers.Margin = new System.Windows.Forms.Padding(0);
             this.uc_manageusers.Name = "uc_manageusers";
-            this.uc_manageusers.Size = new System.Drawing.Size(1911, 915);
+            this.uc_manageusers.Size = new System.Drawing.Size(1900, 913);
             this.uc_manageusers.TabIndex = 15;
             this.uc_manageusers.Load += new System.EventHandler(this.uc_manageusers_Load);
             // 
@@ -158,16 +169,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1894, 1009);
-            this.Controls.Add(this.uc_manageusers);
+            this.Controls.Add(this.uc_viewsalesreport);
             this.Controls.Add(this.btn_functionality4);
             this.Controls.Add(this.btn_functionality3);
             this.Controls.Add(this.btn_functionality2);
             this.Controls.Add(this.btn_functionality1);
             this.Controls.Add(this.panel_footerbar);
             this.Controls.Add(this.lbl_greetings);
+            this.Controls.Add(this.uc_manageusers);
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
@@ -189,5 +200,6 @@
         private System.Windows.Forms.Button btn_functionality2;
         private System.Windows.Forms.Button btn_functionality1;
         private AdminManageUsers uc_manageusers;
+        private AdminViewSalesReport uc_viewsalesreport;
     }
 }

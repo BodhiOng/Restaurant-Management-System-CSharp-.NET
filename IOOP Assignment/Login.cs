@@ -38,7 +38,7 @@ namespace IOOP_Assignment
             string username = txtbxUsername.Text;
             string password = txbxPassword.Text;
 
-            SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DRDatabase.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection connection = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DRDatabase;Integrated Security=True;Connect Timeout=30;Encrypt=False");
 
             string loginQuery = "SELECT * FROM login_database WHERE username = @Username AND password = @Password";
 
@@ -84,6 +84,11 @@ namespace IOOP_Assignment
         }
 
         private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel_loginbg_Paint(object sender, PaintEventArgs e)
         {
 
         }

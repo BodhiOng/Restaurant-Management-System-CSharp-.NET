@@ -3,12 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\bodhi\\OneDrive\\Documents\\VS Files\\source\\repos\\Introduction-To-Object-Oriented-Programming-Semester-2-Assignment\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C3419D24-1B81-42D0-B8F2-7E93387CA8EE}|IOOP Assignment\\IOOP Assignment.csproj|c:\\users\\bodhi\\onedrive\\documents\\vs files\\source\\repos\\introduction-to-object-oriented-programming-semester-2-assignment\\ioop assignment\\adminviewsalesreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C3419D24-1B81-42D0-B8F2-7E93387CA8EE}|IOOP Assignment\\IOOP Assignment.csproj|solutionrelative:ioop assignment\\adminviewsalesreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C3419D24-1B81-42D0-B8F2-7E93387CA8EE}|IOOP Assignment\\IOOP Assignment.csproj|c:\\users\\bodhi\\onedrive\\documents\\vs files\\source\\repos\\introduction-to-object-oriented-programming-semester-2-assignment\\ioop assignment\\adminmanageusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3419D24-1B81-42D0-B8F2-7E93387CA8EE}|IOOP Assignment\\IOOP Assignment.csproj|solutionrelative:ioop assignment\\adminmanageusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3419D24-1B81-42D0-B8F2-7E93387CA8EE}|IOOP Assignment\\IOOP Assignment.csproj|c:\\users\\bodhi\\onedrive\\documents\\vs files\\source\\repos\\introduction-to-object-oriented-programming-semester-2-assignment\\ioop assignment\\adminmanageusers.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3419D24-1B81-42D0-B8F2-7E93387CA8EE}|IOOP Assignment\\IOOP Assignment.csproj|solutionrelative:ioop assignment\\adminmanageusers.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C3419D24-1B81-42D0-B8F2-7E93387CA8EE}|IOOP Assignment\\IOOP Assignment.csproj|c:\\users\\bodhi\\onedrive\\documents\\vs files\\source\\repos\\introduction-to-object-oriented-programming-semester-2-assignment\\ioop assignment\\adminmanageusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C3419D24-1B81-42D0-B8F2-7E93387CA8EE}|IOOP Assignment\\IOOP Assignment.csproj|solutionrelative:ioop assignment\\adminmanageusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/DRDatabase/True/SqlTable/dbo.login_database.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,26 +38,50 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AdminManageUsers.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\bodhi\\OneDrive\\Documents\\VS Files\\source\\repos\\Introduction-To-Object-Oriented-Programming-Semester-2-Assignment\\IOOP Assignment\\AdminManageUsers.Designer.cs",
+              "RelativeDocumentMoniker": "IOOP Assignment\\AdminManageUsers.Designer.cs",
+              "ToolTip": "C:\\Users\\bodhi\\OneDrive\\Documents\\VS Files\\source\\repos\\Introduction-To-Object-Oriented-Programming-Semester-2-Assignment\\IOOP Assignment\\AdminManageUsers.Designer.cs",
+              "RelativeToolTip": "IOOP Assignment\\AdminManageUsers.Designer.cs",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAMwJYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T18:42:46.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminManageUsers.cs",
+              "DocumentMoniker": "C:\\Users\\bodhi\\OneDrive\\Documents\\VS Files\\source\\repos\\Introduction-To-Object-Oriented-Programming-Semester-2-Assignment\\IOOP Assignment\\AdminManageUsers.cs",
+              "RelativeDocumentMoniker": "IOOP Assignment\\AdminManageUsers.cs",
+              "ToolTip": "C:\\Users\\bodhi\\OneDrive\\Documents\\VS Files\\source\\repos\\Introduction-To-Object-Oriented-Programming-Semester-2-Assignment\\IOOP Assignment\\AdminManageUsers.cs",
+              "RelativeToolTip": "IOOP Assignment\\AdminManageUsers.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAqwIEAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T18:42:36.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AdminManageUsers.cs [Design]",
               "DocumentMoniker": "C:\\Users\\bodhi\\OneDrive\\Documents\\VS Files\\source\\repos\\Introduction-To-Object-Oriented-Programming-Semester-2-Assignment\\IOOP Assignment\\AdminManageUsers.cs",
               "RelativeDocumentMoniker": "IOOP Assignment\\AdminManageUsers.cs",
               "ToolTip": "C:\\Users\\bodhi\\OneDrive\\Documents\\VS Files\\source\\repos\\Introduction-To-Object-Oriented-Programming-Semester-2-Assignment\\IOOP Assignment\\AdminManageUsers.cs [Design]",
               "RelativeToolTip": "IOOP Assignment\\AdminManageUsers.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T15:06:56.678Z",
+              "WhenOpened": "2024-04-20T18:40:56.968Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdminViewSalesReport.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\bodhi\\OneDrive\\Documents\\VS Files\\source\\repos\\Introduction-To-Object-Oriented-Programming-Semester-2-Assignment\\IOOP Assignment\\AdminViewSalesReport.cs",
-              "RelativeDocumentMoniker": "IOOP Assignment\\AdminViewSalesReport.cs",
-              "ToolTip": "C:\\Users\\bodhi\\OneDrive\\Documents\\VS Files\\source\\repos\\Introduction-To-Object-Oriented-Programming-Semester-2-Assignment\\IOOP Assignment\\AdminViewSalesReport.cs [Design]",
-              "RelativeToolTip": "IOOP Assignment\\AdminViewSalesReport.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T15:06:48.653Z",
-              "EditorCaption": " [Design]"
+              "DocumentIndex": 3,
+              "Title": "dbo.login_database [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/DRDatabase/True/SqlTable/dbo.login_database.sql",
+              "ToolTip": "dbo.login_database [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-04-20T18:39:27.151Z",
+              "EditorCaption": ""
             }
           ]
         },
