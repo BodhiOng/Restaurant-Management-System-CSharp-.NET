@@ -38,6 +38,7 @@
             this.btn_functionality1 = new System.Windows.Forms.Button();
             this.uc_viewsalesreport = new IOOP_Assignment.AdminViewSalesReport();
             this.uc_manageusers = new IOOP_Assignment.AdminManageUsers();
+            this.uc_viewfeedbacks = new IOOP_Assignment.AdminViewCustomerFeedbacks();
             this.panel_footerbar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,7 +88,6 @@
             this.lbl_greetings.TabIndex = 14;
             this.lbl_greetings.Text = "Welcome, Admin!\r\n\r\nClick a button to use a functionality:";
             this.lbl_greetings.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lbl_greetings.Click += new System.EventHandler(this.lbl_greetings_Click);
             // 
             // btn_functionality4
             // 
@@ -116,6 +116,7 @@
             this.btn_functionality3.TabIndex = 12;
             this.btn_functionality3.Text = "View customer feedback";
             this.btn_functionality3.UseVisualStyleBackColor = false;
+            this.btn_functionality3.Click += new System.EventHandler(this.btn_functionality3_Click);
             // 
             // btn_functionality2
             // 
@@ -157,13 +158,21 @@
             // 
             // uc_manageusers
             // 
+            this.uc_manageusers.AutoSize = true;
             this.uc_manageusers.BackColor = System.Drawing.Color.Transparent;
             this.uc_manageusers.Location = new System.Drawing.Point(0, 0);
             this.uc_manageusers.Margin = new System.Windows.Forms.Padding(0);
             this.uc_manageusers.Name = "uc_manageusers";
             this.uc_manageusers.Size = new System.Drawing.Size(1900, 913);
             this.uc_manageusers.TabIndex = 15;
-            this.uc_manageusers.Load += new System.EventHandler(this.uc_manageusers_Load);
+            // 
+            // uc_viewfeedbacks
+            // 
+            this.uc_viewfeedbacks.Location = new System.Drawing.Point(0, 0);
+            this.uc_viewfeedbacks.Margin = new System.Windows.Forms.Padding(0);
+            this.uc_viewfeedbacks.Name = "uc_viewfeedbacks";
+            this.uc_viewfeedbacks.Size = new System.Drawing.Size(1900, 913);
+            this.uc_viewfeedbacks.TabIndex = 17;
             // 
             // Admin
             // 
@@ -171,18 +180,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1894, 1009);
+            this.Controls.Add(this.uc_viewfeedbacks);
             this.Controls.Add(this.uc_viewsalesreport);
+            this.Controls.Add(this.uc_manageusers);
             this.Controls.Add(this.btn_functionality4);
             this.Controls.Add(this.btn_functionality3);
             this.Controls.Add(this.btn_functionality2);
             this.Controls.Add(this.btn_functionality1);
             this.Controls.Add(this.panel_footerbar);
             this.Controls.Add(this.lbl_greetings);
-            this.Controls.Add(this.uc_manageusers);
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
-            this.Load += new System.EventHandler(this.Admin_Load);
             this.panel_footerbar.ResumeLayout(false);
             this.panel_footerbar.PerformLayout();
             this.ResumeLayout(false);
@@ -201,5 +210,6 @@
         private System.Windows.Forms.Button btn_functionality1;
         private AdminManageUsers uc_manageusers;
         private AdminViewSalesReport uc_viewsalesreport;
+        private AdminViewCustomerFeedbacks uc_viewfeedbacks;
     }
 }

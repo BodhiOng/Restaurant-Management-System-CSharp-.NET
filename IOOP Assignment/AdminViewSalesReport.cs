@@ -15,33 +15,44 @@ namespace IOOP_Assignment
     {
         public class ViewSalesReportFunctionality
         {
+            // Declares connection string for usage
             string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DRDatabase;Integrated Security=True;Connect Timeout=30;Encrypt=False";
 
             public void ViewByWhat(string query, DataGridView dataGridView)
             {
+                // View by specific requirement
                 using (SqlConnection connection = new SqlConnection(connectionString))
-                {
+                {   
+                    // Starts connection
                     connection.Open();
 
+                    // Makes table to fill it with data from the actual SQL table
                     SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
                     DataTable dtbl = new DataTable();
                     adapter.Fill(dtbl);
 
+                    // Display data from SQL table into DataGridView inside of User Control
                     dataGridView.DataSource = dtbl;
                 }
             }
 
             public void RefreshDataGridView(string query, DataGridView dataGridView)
-            {
+            {   
+                // Makes new table
                 DataTable dtbl = new DataTable();
+
+                // Refreshes data in DataGridView
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
+                    // Starts connection
                     connection.Open();
 
+                    // Extracts data to table from SQL tablr
                     SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
                     adapter.Fill(dtbl);
                 }
 
+                // Displays refreshed data to DataGridView
                 dataGridView.DataSource = dtbl;
             }
         }
@@ -51,11 +62,14 @@ namespace IOOP_Assignment
             InitializeComponent();
         }
 
+        // Object instantiation
+        ViewSalesReportFunctionality functionality = new ViewSalesReportFunctionality();
+
         private void btn_viewbycategory_Click(object sender, EventArgs e)
         {
             string byCategoryQuery = "SElECT month, category_name, month_category_sales FROM category_sales";
 
-            ViewSalesReportFunctionality functionality = new ViewSalesReportFunctionality();
+            // Method calling
             functionality.ViewByWhat(byCategoryQuery, dgv_viewsalesreport);
             functionality.RefreshDataGridView(byCategoryQuery, dgv_viewsalesreport);
         }
@@ -64,7 +78,7 @@ namespace IOOP_Assignment
         {
             string byChefQuery = "SElECT month, chef_name, month_chef_sales FROM chef_sales";
 
-            ViewSalesReportFunctionality functionality = new ViewSalesReportFunctionality();
+            // Method calling
             functionality.ViewByWhat(byChefQuery, dgv_viewsalesreport);
             functionality.RefreshDataGridView(byChefQuery, dgv_viewsalesreport);
         }
@@ -73,7 +87,7 @@ namespace IOOP_Assignment
         {
             string byMonthQuery = "SElECT * FROM monthly_sales";
             
-            ViewSalesReportFunctionality functionality = new ViewSalesReportFunctionality();
+            // Method calling
             functionality.ViewByWhat(byMonthQuery, dgv_viewsalesreport);
             functionality.RefreshDataGridView(byMonthQuery, dgv_viewsalesreport);
         }

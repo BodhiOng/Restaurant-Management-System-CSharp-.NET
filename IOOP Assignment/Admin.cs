@@ -15,74 +15,46 @@ namespace IOOP_Assignment
         public Admin()
         {
             InitializeComponent();
+
+            // Hides all User Controls by the booting up of the Admin Form
             uc_manageusers.Hide();
             uc_viewsalesreport.Hide();
+            uc_viewfeedbacks.Hide();
         }
 
         private void linklbl_backtologin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            // Closes this Admin Form window
             this.Close();
-        }
-
-        private void Admin_Load(object sender, EventArgs e)
-        {
-        }
-
-        private void adminManageUsers1_Load(object sender, EventArgs e)
-        {
-        }
-
-        private void adminHomePage1_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void linklbl_adminhomepage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            // Hides all the other User Controls to prioritize the original Admin Form   
             uc_manageusers.Hide();
             uc_viewsalesreport.Hide();
-        }
-
-        private void adminManageUsers1_Load_1(object sender, EventArgs e)
-        {
-
+            uc_viewfeedbacks.Hide();
         }
 
         private void btn_functionality1_Click(object sender, EventArgs e)
         { 
+            // Shows AdminManageUsers User Control and bring it to front for usage
             uc_manageusers.Show();
             uc_manageusers.BringToFront();
         }
 
-        private void lbl_greetings_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void adminManageUsers1_Load_2(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void adminManageUsers1_Load_3(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void uc_manageusers_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_functionality2_Click(object sender, EventArgs e)
         {
+            // Shows AdminSalesReport User Control and bring it to front for usage
             uc_viewsalesreport.Show();
             uc_viewsalesreport.BringToFront();
+        }
+
+        private void btn_functionality3_Click(object sender, EventArgs e)
+        {
+            // Show AdminViewCustomerFeedbacks User Control and bring it front for usage
+            uc_viewfeedbacks.Show();
+            uc_viewfeedbacks.BringToFront();
         }
     }
 }

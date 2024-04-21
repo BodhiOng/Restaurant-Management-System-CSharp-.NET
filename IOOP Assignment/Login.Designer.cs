@@ -48,7 +48,6 @@
             this.lblLogin.Size = new System.Drawing.Size(258, 93);
             this.lblLogin.TabIndex = 0;
             this.lblLogin.Text = "Login";
-            this.lblLogin.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtbxUsername
             // 
@@ -57,7 +56,6 @@
             this.txtbxUsername.Name = "txtbxUsername";
             this.txtbxUsername.Size = new System.Drawing.Size(504, 69);
             this.txtbxUsername.TabIndex = 1;
-            this.txtbxUsername.TextChanged += new System.EventHandler(this.txtbxUsername_TextChanged);
             // 
             // txbxPassword
             // 
@@ -127,7 +125,6 @@
             this.panel_loginbg.Name = "panel_loginbg";
             this.panel_loginbg.Size = new System.Drawing.Size(1896, 1008);
             this.panel_loginbg.TabIndex = 7;
-            this.panel_loginbg.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_loginbg_Paint);
             // 
             // Login
             // 
@@ -146,7 +143,6 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel_header = new System.Windows.Forms.Panel();
-            this.lbl_manageusers = new System.Windows.Forms.Label();
+            this.lbl_viewsalesreport = new System.Windows.Forms.Label();
             this.btn_viewbymonth = new System.Windows.Forms.Button();
             this.btn_viewbychef = new System.Windows.Forms.Button();
             this.btn_viewbycategory = new System.Windows.Forms.Button();
@@ -42,25 +42,25 @@
             // panel_header
             // 
             this.panel_header.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel_header.Controls.Add(this.lbl_manageusers);
+            this.panel_header.Controls.Add(this.lbl_viewsalesreport);
             this.panel_header.Location = new System.Drawing.Point(0, 0);
             this.panel_header.Margin = new System.Windows.Forms.Padding(0);
             this.panel_header.Name = "panel_header";
             this.panel_header.Size = new System.Drawing.Size(1923, 205);
             this.panel_header.TabIndex = 22;
             // 
-            // lbl_manageusers
+            // lbl_viewsalesreport
             // 
-            this.lbl_manageusers.AutoSize = true;
-            this.lbl_manageusers.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_manageusers.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_manageusers.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_manageusers.Location = new System.Drawing.Point(571, 54);
-            this.lbl_manageusers.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_manageusers.Name = "lbl_manageusers";
-            this.lbl_manageusers.Size = new System.Drawing.Size(731, 93);
-            this.lbl_manageusers.TabIndex = 0;
-            this.lbl_manageusers.Text = "View Sales Report";
+            this.lbl_viewsalesreport.AutoSize = true;
+            this.lbl_viewsalesreport.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_viewsalesreport.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_viewsalesreport.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbl_viewsalesreport.Location = new System.Drawing.Point(571, 54);
+            this.lbl_viewsalesreport.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_viewsalesreport.Name = "lbl_viewsalesreport";
+            this.lbl_viewsalesreport.Size = new System.Drawing.Size(731, 93);
+            this.lbl_viewsalesreport.TabIndex = 0;
+            this.lbl_viewsalesreport.Text = "View Sales Report";
             // 
             // btn_viewbymonth
             // 
@@ -159,7 +159,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel_header;
-        private System.Windows.Forms.Label lbl_manageusers;
+        private System.Windows.Forms.Label lbl_viewsalesreport;
         private System.Windows.Forms.Button btn_viewbymonth;
         private System.Windows.Forms.Button btn_viewbychef;
         private System.Windows.Forms.Button btn_viewbycategory;
