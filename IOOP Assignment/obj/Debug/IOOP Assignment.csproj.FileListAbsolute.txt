@@ -12,3 +12,4 @@ C:\Users\bodhi\OneDrive\Documents\VS Files\source\repos\Introduction-To-Object-O
 C:\Users\bodhi\OneDrive\Documents\VS Files\source\repos\Introduction-To-Object-Oriented-Programming-Semester-2-Assignment\IOOP Assignment\obj\Debug\IOOP Assignment.exe
 C:\Users\bodhi\OneDrive\Documents\VS Files\source\repos\Introduction-To-Object-Oriented-Programming-Semester-2-Assignment\IOOP Assignment\obj\Debug\IOOP Assignment.pdb
 C:\Users\bodhi\OneDrive\Documents\VS Files\source\repos\Introduction-To-Object-Oriented-Programming-Semester-2-Assignment\IOOP Assignment\obj\Debug\IOOP_Assignment.AdminViewCustomerFeedbacks.resources
+C:\Users\bodhi\OneDrive\Documents\VS Files\source\repos\Introduction-To-Object-Oriented-Programming-Semester-2-Assignment\IOOP Assignment\obj\Debug\IOOP_Assignment.AdminUpdateProfile.resources

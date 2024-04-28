@@ -24,23 +24,26 @@ namespace IOOP_Assignment
             this.Close();
         }
 
+        // Declares connection string & query for usage
+        string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DRDatabase;Integrated Security=True;Connect Timeout=30;Encrypt=False";
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
             // Catches user input into respective text boxes
             string username = txtbxUsername.Text;
             string password = txbxPassword.Text;
 
-            // Declares connection string and query to perform login
-            SqlConnection connection = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DRDatabase;Integrated Security=True;Connect Timeout=30;Encrypt=False");
-            string loginQuery = "SELECT * FROM login_database WHERE username = @Username AND password = @Password";
-
             // Starting connection for reading purposes
-            using (connection)
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
+                // Starts connection
                 connection.Open();
 
+                // Declares query to look for username with that specific password
+                string loginQuery = "SELECT * FROM login_database WHERE username = @Username AND password = @Password";
+
                 using (SqlCommand command = new SqlCommand(loginQuery, connection))
-                {   
+                {
                     // Replaces the string bits with user-inputted valiues
                     command.Parameters.AddWithValue("@Username", username);
                     command.Parameters.AddWithValue("@Password", password);
@@ -77,6 +80,15 @@ namespace IOOP_Assignment
                         MessageBox.Show($"Error: {ex.Message}");
                     }
                 }
+            }
+        }
+
+        private void txbxPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // If "Enter" is pressed after typing into Password textbox, button Login will be clicked
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                btnLogin_Click(sender, e);
             }
         }
     }

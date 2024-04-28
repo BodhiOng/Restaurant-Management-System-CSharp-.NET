@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
             this.linklbl_backtologin = new System.Windows.Forms.LinkLabel();
             this.panel_footerbar = new System.Windows.Forms.Panel();
             this.linklbl_adminhomepage = new System.Windows.Forms.LinkLabel();
@@ -36,9 +37,10 @@
             this.btn_functionality3 = new System.Windows.Forms.Button();
             this.btn_functionality2 = new System.Windows.Forms.Button();
             this.btn_functionality1 = new System.Windows.Forms.Button();
+            this.uc_viewfeedbacks = new IOOP_Assignment.AdminViewCustomerFeedbacks();
             this.uc_viewsalesreport = new IOOP_Assignment.AdminViewSalesReport();
             this.uc_manageusers = new IOOP_Assignment.AdminManageUsers();
-            this.uc_viewfeedbacks = new IOOP_Assignment.AdminViewCustomerFeedbacks();
+            this.uc_updateprofile = new IOOP_Assignment.AdminUpdateProfile();
             this.panel_footerbar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +58,6 @@
             // 
             // panel_footerbar
             // 
-            this.panel_footerbar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.panel_footerbar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.panel_footerbar.Controls.Add(this.linklbl_adminhomepage);
             this.panel_footerbar.Controls.Add(this.linklbl_backtologin);
@@ -102,6 +103,7 @@
             this.btn_functionality4.TabIndex = 13;
             this.btn_functionality4.Text = "Update your profile";
             this.btn_functionality4.UseVisualStyleBackColor = false;
+            this.btn_functionality4.Click += new System.EventHandler(this.btn_functionality4_Click);
             // 
             // btn_functionality3
             // 
@@ -148,12 +150,21 @@
             this.btn_functionality1.UseVisualStyleBackColor = false;
             this.btn_functionality1.Click += new System.EventHandler(this.btn_functionality1_Click);
             // 
+            // uc_viewfeedbacks
+            // 
+            this.uc_viewfeedbacks.Location = new System.Drawing.Point(0, 0);
+            this.uc_viewfeedbacks.Margin = new System.Windows.Forms.Padding(0);
+            this.uc_viewfeedbacks.Name = "uc_viewfeedbacks";
+            this.uc_viewfeedbacks.Size = new System.Drawing.Size(1900, 913);
+            this.uc_viewfeedbacks.TabIndex = 17;
+            // 
             // uc_viewsalesreport
             // 
+            this.uc_viewsalesreport.AutoSize = true;
             this.uc_viewsalesreport.Location = new System.Drawing.Point(0, 0);
             this.uc_viewsalesreport.Margin = new System.Windows.Forms.Padding(0);
             this.uc_viewsalesreport.Name = "uc_viewsalesreport";
-            this.uc_viewsalesreport.Size = new System.Drawing.Size(1900, 913);
+            this.uc_viewsalesreport.Size = new System.Drawing.Size(1923, 913);
             this.uc_viewsalesreport.TabIndex = 16;
             // 
             // uc_manageusers
@@ -166,20 +177,24 @@
             this.uc_manageusers.Size = new System.Drawing.Size(1900, 913);
             this.uc_manageusers.TabIndex = 15;
             // 
-            // uc_viewfeedbacks
+            // uc_updateprofile
             // 
-            this.uc_viewfeedbacks.Location = new System.Drawing.Point(0, 0);
-            this.uc_viewfeedbacks.Margin = new System.Windows.Forms.Padding(0);
-            this.uc_viewfeedbacks.Name = "uc_viewfeedbacks";
-            this.uc_viewfeedbacks.Size = new System.Drawing.Size(1900, 913);
-            this.uc_viewfeedbacks.TabIndex = 17;
+            this.uc_updateprofile.Location = new System.Drawing.Point(0, 0);
+            this.uc_updateprofile.Margin = new System.Windows.Forms.Padding(0);
+            this.uc_updateprofile.Name = "uc_updateprofile";
+            this.uc_updateprofile.Size = new System.Drawing.Size(1900, 913);
+            this.uc_updateprofile.TabIndex = 18;
             // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1894, 1009);
+            this.Controls.Add(this.uc_updateprofile);
+            this.Controls.Add(this.panel_footerbar);
             this.Controls.Add(this.uc_viewfeedbacks);
             this.Controls.Add(this.uc_viewsalesreport);
             this.Controls.Add(this.uc_manageusers);
@@ -187,8 +202,8 @@
             this.Controls.Add(this.btn_functionality3);
             this.Controls.Add(this.btn_functionality2);
             this.Controls.Add(this.btn_functionality1);
-            this.Controls.Add(this.panel_footerbar);
             this.Controls.Add(this.lbl_greetings);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
@@ -211,5 +226,6 @@
         private AdminManageUsers uc_manageusers;
         private AdminViewSalesReport uc_viewsalesreport;
         private AdminViewCustomerFeedbacks uc_viewfeedbacks;
+        private AdminUpdateProfile uc_updateprofile;
     }
 }

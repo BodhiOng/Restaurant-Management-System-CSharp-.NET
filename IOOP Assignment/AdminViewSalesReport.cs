@@ -85,7 +85,7 @@ namespace IOOP_Assignment
 
         private void btn_viewbymonth_Click(object sender, EventArgs e)
         {
-            string byMonthQuery = "SElECT * FROM monthly_sales";
+            string byMonthQuery = "UPDATE ms\r\nSET ms.month_sales = (\r\n    SELECT COALESCE(SUM(cs.month_category_sales), 0)\r\n    FROM category_sales cs\r\n    WHERE cs.month = ms.month_name\r\n  )\r\n  +\r\n  (\r\n    SELECT COALESCE(SUM(chs.month_chef_sales), 0)\r\n    FROM chef_sales chs\r\n    WHERE chs.month = ms.month_name\r\n  )\r\nFROM monthly_sales ms;\r\n\r\nSELECT month_name, month_sales FROM monthly_sales ORDER BY id;";
             
             // Method calling
             functionality.ViewByWhat(byMonthQuery, dgv_viewsalesreport);

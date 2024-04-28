@@ -55,7 +55,7 @@
             this.lbl_viewsalesreport.BackColor = System.Drawing.Color.Transparent;
             this.lbl_viewsalesreport.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_viewsalesreport.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_viewsalesreport.Location = new System.Drawing.Point(571, 54);
+            this.lbl_viewsalesreport.Location = new System.Drawing.Point(619, 59);
             this.lbl_viewsalesreport.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_viewsalesreport.Name = "lbl_viewsalesreport";
             this.lbl_viewsalesreport.Size = new System.Drawing.Size(731, 93);
@@ -120,18 +120,18 @@
             this.dgv_viewsalesreport.ReadOnly = true;
             this.dgv_viewsalesreport.RowHeadersWidth = 82;
             this.dgv_viewsalesreport.RowTemplate.Height = 33;
-            this.dgv_viewsalesreport.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.dgv_viewsalesreport.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgv_viewsalesreport.Size = new System.Drawing.Size(954, 574);
             this.dgv_viewsalesreport.TabIndex = 26;
             // 
             // lbl_notice
             // 
             this.lbl_notice.AutoSize = true;
-            this.lbl_notice.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_notice.ForeColor = System.Drawing.Color.Red;
-            this.lbl_notice.Location = new System.Drawing.Point(93, 291);
+            this.lbl_notice.Font = new System.Drawing.Font("Arial", 9F);
+            this.lbl_notice.ForeColor = System.Drawing.Color.ForestGreen;
+            this.lbl_notice.Location = new System.Drawing.Point(94, 291);
             this.lbl_notice.Name = "lbl_notice";
-            this.lbl_notice.Size = new System.Drawing.Size(691, 32);
+            this.lbl_notice.Size = new System.Drawing.Size(614, 27);
             this.lbl_notice.TabIndex = 29;
             this.lbl_notice.Text = "*Press the button once again to refresh data in the table";
             // 

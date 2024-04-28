@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\bodhi\\OneDrive\\Documents\\VS Files\\source\\repos\\Introduction-To-Object-Oriented-Programming-Semester-2-Assignment\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C3419D24-1B81-42D0-B8F2-7E93387CA8EE}|IOOP Assignment\\IOOP Assignment.csproj|c:\\users\\bodhi\\onedrive\\documents\\vs files\\source\\repos\\introduction-to-object-oriented-programming-semester-2-assignment\\ioop assignment\\adminviewsalesreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3419D24-1B81-42D0-B8F2-7E93387CA8EE}|IOOP Assignment\\IOOP Assignment.csproj|solutionrelative:ioop assignment\\adminviewsalesreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3419D24-1B81-42D0-B8F2-7E93387CA8EE}|IOOP Assignment\\IOOP Assignment.csproj|c:\\users\\bodhi\\onedrive\\documents\\vs files\\source\\repos\\introduction-to-object-oriented-programming-semester-2-assignment\\ioop assignment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3419D24-1B81-42D0-B8F2-7E93387CA8EE}|IOOP Assignment\\IOOP Assignment.csproj|solutionrelative:ioop assignment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 215,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -23,6 +23,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\bodhi\\OneDrive\\Documents\\VS Files\\source\\repos\\Introduction-To-Object-Oriented-Programming-Semester-2-Assignment\\IOOP Assignment\\Program.cs",
+              "RelativeDocumentMoniker": "IOOP Assignment\\Program.cs",
+              "ToolTip": "C:\\Users\\bodhi\\OneDrive\\Documents\\VS Files\\source\\repos\\Introduction-To-Object-Oriented-Programming-Semester-2-Assignment\\IOOP Assignment\\Program.cs",
+              "RelativeToolTip": "IOOP Assignment\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T16:47:09.226Z",
+              "EditorCaption": ""
             }
           ]
         },
@@ -33,40 +46,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "347efd5a-ccb8-440f-9ded-525a3eb7ce1a",
-        "Display": 1,
-        "X": 830,
-        "Y": 354,
-        "Width": 1095,
-        "Height": 683,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdminViewSalesReport.cs",
-              "DocumentMoniker": "C:\\Users\\bodhi\\OneDrive\\Documents\\VS Files\\source\\repos\\Introduction-To-Object-Oriented-Programming-Semester-2-Assignment\\IOOP Assignment\\AdminViewSalesReport.cs",
-              "RelativeDocumentMoniker": "IOOP Assignment\\AdminViewSalesReport.cs",
-              "ToolTip": "C:\\Users\\bodhi\\OneDrive\\Documents\\VS Files\\source\\repos\\Introduction-To-Object-Oriented-Programming-Semester-2-Assignment\\IOOP Assignment\\AdminViewSalesReport.cs",
-              "RelativeToolTip": "IOOP Assignment\\AdminViewSalesReport.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABwAAABRAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T11:51:44.091Z",
-              "EditorCaption": ""
             }
           ]
         }

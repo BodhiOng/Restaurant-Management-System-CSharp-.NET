@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.lblLogin = new System.Windows.Forms.Label();
             this.txtbxUsername = new System.Windows.Forms.TextBox();
             this.txbxPassword = new System.Windows.Forms.TextBox();
@@ -65,6 +66,7 @@
             this.txbxPassword.PasswordChar = '*';
             this.txbxPassword.Size = new System.Drawing.Size(504, 69);
             this.txbxPassword.TabIndex = 2;
+            this.txbxPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbxPassword_KeyPress);
             // 
             // lblUsername
             // 
@@ -123,7 +125,7 @@
             this.panel_loginbg.AutoSize = true;
             this.panel_loginbg.Location = new System.Drawing.Point(0, 0);
             this.panel_loginbg.Name = "panel_loginbg";
-            this.panel_loginbg.Size = new System.Drawing.Size(1896, 1008);
+            this.panel_loginbg.Size = new System.Drawing.Size(1888, 1008);
             this.panel_loginbg.TabIndex = 7;
             // 
             // Login
@@ -140,6 +142,7 @@
             this.Controls.Add(this.txtbxUsername);
             this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.panel_loginbg);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

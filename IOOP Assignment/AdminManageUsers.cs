@@ -48,7 +48,7 @@ namespace IOOP_Assignment
                         try
                         {   
                             // Query executed and user is added
-                            int rowsAffected = cmd.ExecuteNonQuery();
+                            cmd.ExecuteNonQuery();
 
                             MessageBox.Show("User successfully added");
                         }
@@ -131,7 +131,7 @@ namespace IOOP_Assignment
                         try
                         {
                             // Query executed and user is deleted
-                            int rowsAffected = cmd.ExecuteNonQuery();
+                            cmd.ExecuteNonQuery();
 
                             MessageBox.Show("User successfully deleted");
                         }
@@ -181,7 +181,7 @@ namespace IOOP_Assignment
                         try
                         {   
                             // Query executed and user updated
-                            int rowsAffected = cmd.ExecuteNonQuery();
+                            cmd.ExecuteNonQuery();
 
                             MessageBox.Show("User successfully updated");
                         }
@@ -216,15 +216,12 @@ namespace IOOP_Assignment
                 adapter.Fill(dtbl);
 
                 // Displays the modified/refreshed data too the DataGridView inside the User Control
-                dgv_logindatabase.DataSource = dtbl;
-                
-                // Closes connection just to ensure disconnection
-                connection.Close();
+                dgv_logindatabase.DataSource = dtbl;       
             }
         }
 
         // Object instantiation for method calling in button-clicks event handling
-        ManageUsersFunctionalities adminFunc = new ManageUsersFunctionalities();
+        ManageUsersFunctionalities functionalities = new ManageUsersFunctionalities();
 
         private void btn_add_Click(object sender, EventArgs e)
         {   
@@ -234,7 +231,7 @@ namespace IOOP_Assignment
             string role = cmbbx_role.Text;
 
             // Method calling
-            adminFunc.AddUser(un, pw, role);
+            functionalities.AddUser(un, pw, role);
             RefreshDataGridView();
         }
 
@@ -244,7 +241,7 @@ namespace IOOP_Assignment
             string un = txtbx_username.Text;
 
             // Method calling
-            adminFunc.DeleteUser(un);
+            functionalities.DeleteUser(un);
             RefreshDataGridView();
         }
 
@@ -256,7 +253,7 @@ namespace IOOP_Assignment
             string role = cmbbx_role.Text;
 
             // Method calling
-            adminFunc.UpdateUser(un, pw, role);
+            functionalities.UpdateUser(un, pw, role);
             RefreshDataGridView();
         }
 
@@ -278,6 +275,11 @@ namespace IOOP_Assignment
 
             // Displays the modified/refreshed data too the DataGridView inside the User Control
             dgv_logindatabase.DataSource = dtbl;
+        }
+
+        private void btn_refreshtbl_Click(object sender, EventArgs e)
+        {
+            RefreshDataGridView();
         }
     }
 }

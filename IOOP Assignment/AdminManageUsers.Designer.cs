@@ -39,8 +39,9 @@
             this.txtbx_password = new System.Windows.Forms.TextBox();
             this.cmbbx_role = new System.Windows.Forms.ComboBox();
             this.panel_header = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.dgv_logindatabase = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btn_refreshtbl = new System.Windows.Forms.Button();
             this.panel_header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_logindatabase)).BeginInit();
             this.SuspendLayout();
@@ -117,7 +118,7 @@
             // 
             this.lbl_password.AutoSize = true;
             this.lbl_password.Font = new System.Drawing.Font("Arial", 20F);
-            this.lbl_password.Location = new System.Drawing.Point(157, 404);
+            this.lbl_password.Location = new System.Drawing.Point(157, 431);
             this.lbl_password.Name = "lbl_password";
             this.lbl_password.Size = new System.Drawing.Size(279, 61);
             this.lbl_password.TabIndex = 16;
@@ -127,7 +128,7 @@
             // 
             this.lbl_role.AutoSize = true;
             this.lbl_role.Font = new System.Drawing.Font("Arial", 20F);
-            this.lbl_role.Location = new System.Drawing.Point(282, 499);
+            this.lbl_role.Location = new System.Drawing.Point(282, 526);
             this.lbl_role.Name = "lbl_role";
             this.lbl_role.Size = new System.Drawing.Size(154, 61);
             this.lbl_role.TabIndex = 17;
@@ -144,7 +145,7 @@
             // txtbx_password
             // 
             this.txtbx_password.Font = new System.Drawing.Font("Arial", 20F);
-            this.txtbx_password.Location = new System.Drawing.Point(442, 401);
+            this.txtbx_password.Location = new System.Drawing.Point(442, 428);
             this.txtbx_password.Name = "txtbx_password";
             this.txtbx_password.Size = new System.Drawing.Size(454, 69);
             this.txtbx_password.TabIndex = 19;
@@ -157,7 +158,7 @@
             "Manager",
             "Chef",
             "Customer"});
-            this.cmbbx_role.Location = new System.Drawing.Point(442, 499);
+            this.cmbbx_role.Location = new System.Drawing.Point(442, 526);
             this.cmbbx_role.Name = "cmbbx_role";
             this.cmbbx_role.Size = new System.Drawing.Size(454, 68);
             this.cmbbx_role.TabIndex = 20;
@@ -172,17 +173,6 @@
             this.panel_header.Size = new System.Drawing.Size(1900, 205);
             this.panel_header.TabIndex = 21;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(436, 354);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(523, 32);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "*Username must be typed all in lowercase";
-            // 
             // dgv_logindatabase
             // 
             this.dgv_logindatabase.AllowUserToAddRows = false;
@@ -190,7 +180,7 @@
             this.dgv_logindatabase.AllowUserToOrderColumns = true;
             this.dgv_logindatabase.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_logindatabase.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_logindatabase.Location = new System.Drawing.Point(984, 268);
+            this.dgv_logindatabase.Location = new System.Drawing.Point(984, 306);
             this.dgv_logindatabase.Name = "dgv_logindatabase";
             this.dgv_logindatabase.ReadOnly = true;
             this.dgv_logindatabase.RowHeadersWidth = 82;
@@ -198,14 +188,41 @@
             this.dgv_logindatabase.Size = new System.Drawing.Size(830, 576);
             this.dgv_logindatabase.TabIndex = 23;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(442, 359);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(438, 50);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "*Username must be in lowercase\r\n*No use of spaces, only use underscores (_)\r\n";
+            // 
+            // btn_refreshtbl
+            // 
+            this.btn_refreshtbl.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btn_refreshtbl.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_refreshtbl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_refreshtbl.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_refreshtbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_refreshtbl.Location = new System.Drawing.Point(1507, 240);
+            this.btn_refreshtbl.Name = "btn_refreshtbl";
+            this.btn_refreshtbl.Size = new System.Drawing.Size(307, 60);
+            this.btn_refreshtbl.TabIndex = 38;
+            this.btn_refreshtbl.Text = "Refresh table";
+            this.btn_refreshtbl.UseVisualStyleBackColor = false;
+            this.btn_refreshtbl.Click += new System.EventHandler(this.btn_refreshtbl_Click);
+            // 
             // AdminManageUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.dgv_logindatabase);
+            this.Controls.Add(this.btn_refreshtbl);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.dgv_logindatabase);
             this.Controls.Add(this.cmbbx_role);
             this.Controls.Add(this.txtbx_password);
             this.Controls.Add(this.txtbx_username);
@@ -244,7 +261,8 @@
         private System.Windows.Forms.TextBox txtbx_password;
         private System.Windows.Forms.ComboBox cmbbx_role;
         private System.Windows.Forms.Panel panel_header;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgv_logindatabase;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_refreshtbl;
     }
 }

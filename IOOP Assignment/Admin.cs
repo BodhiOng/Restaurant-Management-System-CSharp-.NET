@@ -20,6 +20,7 @@ namespace IOOP_Assignment
             uc_manageusers.Hide();
             uc_viewsalesreport.Hide();
             uc_viewfeedbacks.Hide();
+            uc_updateprofile.Hide();
         }
 
         private void linklbl_backtologin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -34,10 +35,11 @@ namespace IOOP_Assignment
             uc_manageusers.Hide();
             uc_viewsalesreport.Hide();
             uc_viewfeedbacks.Hide();
+            uc_updateprofile.Hide();
         }
 
         private void btn_functionality1_Click(object sender, EventArgs e)
-        { 
+        {
             // Shows AdminManageUsers User Control and bring it to front for usage
             uc_manageusers.Show();
             uc_manageusers.BringToFront();
@@ -55,6 +57,13 @@ namespace IOOP_Assignment
             // Show AdminViewCustomerFeedbacks User Control and bring it front for usage
             uc_viewfeedbacks.Show();
             uc_viewfeedbacks.BringToFront();
+        }
+
+        private void btn_functionality4_Click(object sender, EventArgs e)
+        {
+            // Show AdminUpdateProfile User Control and bring it front for usage
+            uc_updateprofile.Show();
+            uc_updateprofile.BringToFront();
         }
     }
 }
