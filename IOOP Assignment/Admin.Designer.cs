@@ -40,7 +40,7 @@
             this.uc_viewfeedbacks = new IOOP_Assignment.AdminViewCustomerFeedbacks();
             this.uc_viewsalesreport = new IOOP_Assignment.AdminViewSalesReport();
             this.uc_manageusers = new IOOP_Assignment.AdminManageUsers();
-            this.uc_updateprofile = new IOOP_Assignment.AdminUpdateProfile();
+            this.uc_updateprofile = new IOOP_Assignment.UpdateProfile();
             this.panel_footerbar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -226,6 +226,6 @@
         private AdminManageUsers uc_manageusers;
         private AdminViewSalesReport uc_viewsalesreport;
         private AdminViewCustomerFeedbacks uc_viewfeedbacks;
-        private AdminUpdateProfile uc_updateprofile;
+        private UpdateProfile uc_updateprofile;
     }
 }

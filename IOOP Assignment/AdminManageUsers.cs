@@ -209,7 +209,7 @@ namespace IOOP_Assignment
                 connection.Open();
 
                 // Links query wih connection
-                SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM login_database;", connection);
+                SqlDataAdapter adapter = new SqlDataAdapter("SELECT username, role FROM login_database;", connection);
 
                 // Extracts current data to table from the actual SQL table (login_database)
                 DataTable dtbl = new DataTable();
@@ -269,7 +269,7 @@ namespace IOOP_Assignment
                 connection.Open();
 
                 // Fills table with refreshed data of login_database (SQL table)
-                SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM login_database;", connection);
+                SqlDataAdapter adapter = new SqlDataAdapter("SELECT username, role FROM login_database;", connection);
                 adapter.Fill(dtbl);
             }
 

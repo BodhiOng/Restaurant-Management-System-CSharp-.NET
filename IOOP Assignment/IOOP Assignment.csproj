@@ -73,11 +73,11 @@
     <Compile Include="AdminManageUsers.Designer.cs">
       <DependentUpon>AdminManageUsers.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminUpdateProfile.cs">
+    <Compile Include="UpdateProfile.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AdminUpdateProfile.Designer.cs">
-      <DependentUpon>AdminUpdateProfile.cs</DependentUpon>
+    <Compile Include="UpdateProfile.Designer.cs">
+      <DependentUpon>UpdateProfile.cs</DependentUpon>
     </Compile>
     <Compile Include="AdminViewCustomerFeedbacks.cs">
       <SubType>UserControl</SubType>
@@ -105,8 +105,8 @@
     <EmbeddedResource Include="AdminManageUsers.resx">
       <DependentUpon>AdminManageUsers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminUpdateProfile.resx">
-      <DependentUpon>AdminUpdateProfile.cs</DependentUpon>
+    <EmbeddedResource Include="UpdateProfile.resx">
+      <DependentUpon>UpdateProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminViewCustomerFeedbacks.resx">
       <DependentUpon>AdminViewCustomerFeedbacks.cs</DependentUpon>
