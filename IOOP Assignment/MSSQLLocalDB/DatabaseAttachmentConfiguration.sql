@@ -7,9 +7,9 @@ Change the YourDatabaseName to database's randomly generated name
 
 USE master;
 GO
-ALTER DATABASE [YourDatabaseName] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+ALTER DATABASE [21B669F01EDD206559E94F9F54B343CE_CT-ORIENTED-PROGRAMMING-SEMESTER-2-ASSIGNMENT-BODHI\IOOP ASSIGNMENT\MSSQLLOCALDB\DRDATABASE.MDF] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
 GO
-EXEC sp_detach_db 'YourDatabaseName';
+EXEC sp_detach_db '21B669F01EDD206559E94F9F54B343CE_CT-ORIENTED-PROGRAMMING-SEMESTER-2-ASSIGNMENT-BODHI\IOOP ASSIGNMENT\MSSQLLOCALDB\DRDATABASE.MDF';
 
 /*
 2nd query
@@ -19,6 +19,6 @@ Replace path_to_mdf_file & path_to_ldf_file with the paths, copy the paths by ri
 USE master;
 GO
 CREATE DATABASE DRDatabase ON 
-(FILENAME = 'path_to_mdf_file'), 
-(FILENAME = 'path_to_ldf_file') 
+(FILENAME = 'D:\skool\SEM 2\IOOP\Introduction-To-Object-Oriented-Programming-Semester-2-Assignment-bodhi\IOOP Assignment\MSSQLLocalDB\DRDatabase.mdf'), 
+(FILENAME = 'D:\skool\SEM 2\IOOP\Introduction-To-Object-Oriented-Programming-Semester-2-Assignment-bodhi\IOOP Assignment\MSSQLLocalDB\DRDatabase.ldf') 
 FOR ATTACH;

@@ -56,7 +56,6 @@
             this.txtFoodSearch = new System.Windows.Forms.TextBox();
             this.lblCusFoodMenuandOrder = new System.Windows.Forms.Label();
             this.panelFoodCart = new System.Windows.Forms.Panel();
-            this.lblOrdertxt = new System.Windows.Forms.Label();
             this.panel_header = new System.Windows.Forms.Panel();
             this.pbxSearchMenu = new System.Windows.Forms.PictureBox();
             this.pbxShowCart = new System.Windows.Forms.PictureBox();
@@ -78,9 +77,10 @@
             // btnDecrement
             // 
             this.btnDecrement.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDecrement.Location = new System.Drawing.Point(424, 841);
+            this.btnDecrement.Location = new System.Drawing.Point(283, 538);
+            this.btnDecrement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDecrement.Name = "btnDecrement";
-            this.btnDecrement.Size = new System.Drawing.Size(50, 50);
+            this.btnDecrement.Size = new System.Drawing.Size(33, 32);
             this.btnDecrement.TabIndex = 56;
             this.btnDecrement.Text = "-";
             this.btnDecrement.UseVisualStyleBackColor = true;
@@ -91,9 +91,10 @@
             this.lblQty.AutoSize = true;
             this.lblQty.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblQty.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQty.Location = new System.Drawing.Point(318, 844);
+            this.lblQty.Location = new System.Drawing.Point(212, 540);
+            this.lblQty.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblQty.Name = "lblQty";
-            this.lblQty.Size = new System.Drawing.Size(44, 47);
+            this.lblQty.Size = new System.Drawing.Size(28, 30);
             this.lblQty.TabIndex = 54;
             this.lblQty.Text = "1";
             // 
@@ -101,9 +102,10 @@
             // 
             this.lblQuantity.AutoSize = true;
             this.lblQuantity.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuantity.Location = new System.Drawing.Point(118, 844);
+            this.lblQuantity.Location = new System.Drawing.Point(79, 540);
+            this.lblQuantity.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(186, 45);
+            this.lblQuantity.Size = new System.Drawing.Size(119, 28);
             this.lblQuantity.TabIndex = 53;
             this.lblQuantity.Text = "Quantity :";
             // 
@@ -112,9 +114,10 @@
             this.lblOrder.AutoSize = true;
             this.lblOrder.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblOrder.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOrder.Location = new System.Drawing.Point(119, 755);
+            this.lblOrder.Location = new System.Drawing.Point(79, 483);
+            this.lblOrder.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblOrder.Name = "lblOrder";
-            this.lblOrder.Size = new System.Drawing.Size(223, 47);
+            this.lblOrder.Size = new System.Drawing.Size(140, 30);
             this.lblOrder.TabIndex = 52;
             this.lblOrder.Text = "Order food:";
             // 
@@ -122,9 +125,10 @@
             // 
             this.lblAllCategories.AutoSize = true;
             this.lblAllCategories.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAllCategories.Location = new System.Drawing.Point(92, 338);
+            this.lblAllCategories.Location = new System.Drawing.Point(61, 216);
+            this.lblAllCategories.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAllCategories.Name = "lblAllCategories";
-            this.lblAllCategories.Size = new System.Drawing.Size(264, 45);
+            this.lblAllCategories.Size = new System.Drawing.Size(170, 28);
             this.lblAllCategories.TabIndex = 40;
             this.lblAllCategories.Text = "All Categories";
             // 
@@ -132,18 +136,20 @@
             // 
             this.lblAppetizer.AutoSize = true;
             this.lblAppetizer.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAppetizer.Location = new System.Drawing.Point(92, 281);
+            this.lblAppetizer.Location = new System.Drawing.Point(61, 180);
+            this.lblAppetizer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAppetizer.Name = "lblAppetizer";
-            this.lblAppetizer.Size = new System.Drawing.Size(206, 45);
+            this.lblAppetizer.Size = new System.Drawing.Size(131, 28);
             this.lblAppetizer.TabIndex = 39;
             this.lblAppetizer.Text = "Appetizers";
             // 
             // btnAddtoCart
             // 
             this.btnAddtoCart.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddtoCart.Location = new System.Drawing.Point(492, 834);
+            this.btnAddtoCart.Location = new System.Drawing.Point(328, 534);
+            this.btnAddtoCart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddtoCart.Name = "btnAddtoCart";
-            this.btnAddtoCart.Size = new System.Drawing.Size(270, 59);
+            this.btnAddtoCart.Size = new System.Drawing.Size(180, 38);
             this.btnAddtoCart.TabIndex = 58;
             this.btnAddtoCart.Text = "Add to Cart";
             this.btnAddtoCart.UseVisualStyleBackColor = true;
@@ -153,18 +159,20 @@
             // 
             this.lstOrderDetails.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.lstOrderDetails.FormattingEnabled = true;
-            this.lstOrderDetails.ItemHeight = 25;
-            this.lstOrderDetails.Location = new System.Drawing.Point(14, 18);
+            this.lstOrderDetails.ItemHeight = 16;
+            this.lstOrderDetails.Location = new System.Drawing.Point(9, 12);
+            this.lstOrderDetails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lstOrderDetails.Name = "lstOrderDetails";
-            this.lstOrderDetails.Size = new System.Drawing.Size(822, 354);
+            this.lstOrderDetails.Size = new System.Drawing.Size(549, 228);
             this.lstOrderDetails.TabIndex = 0;
             // 
             // btnAddOrder
             // 
             this.btnAddOrder.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddOrder.Location = new System.Drawing.Point(1586, 822);
+            this.btnAddOrder.Location = new System.Drawing.Point(1057, 526);
+            this.btnAddOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddOrder.Name = "btnAddOrder";
-            this.btnAddOrder.Size = new System.Drawing.Size(244, 62);
+            this.btnAddOrder.Size = new System.Drawing.Size(163, 40);
             this.btnAddOrder.TabIndex = 60;
             this.btnAddOrder.Text = "Add Order";
             this.btnAddOrder.UseVisualStyleBackColor = true;
@@ -174,9 +182,10 @@
             // 
             this.lblDessert.AutoSize = true;
             this.lblDessert.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDessert.Location = new System.Drawing.Point(90, 220);
+            this.lblDessert.Location = new System.Drawing.Point(60, 141);
+            this.lblDessert.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDessert.Name = "lblDessert";
-            this.lblDessert.Size = new System.Drawing.Size(174, 45);
+            this.lblDessert.Size = new System.Drawing.Size(112, 28);
             this.lblDessert.TabIndex = 38;
             this.lblDessert.Text = "Desserts";
             // 
@@ -184,9 +193,10 @@
             // 
             this.lblBeverage.AutoSize = true;
             this.lblBeverage.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBeverage.Location = new System.Drawing.Point(90, 155);
+            this.lblBeverage.Location = new System.Drawing.Point(60, 99);
+            this.lblBeverage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBeverage.Name = "lblBeverage";
-            this.lblBeverage.Size = new System.Drawing.Size(208, 45);
+            this.lblBeverage.Size = new System.Drawing.Size(131, 28);
             this.lblBeverage.TabIndex = 37;
             this.lblBeverage.Text = "Beverages";
             // 
@@ -194,9 +204,10 @@
             // 
             this.lblMainCourse.AutoSize = true;
             this.lblMainCourse.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMainCourse.Location = new System.Drawing.Point(90, 88);
+            this.lblMainCourse.Location = new System.Drawing.Point(60, 56);
+            this.lblMainCourse.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMainCourse.Name = "lblMainCourse";
-            this.lblMainCourse.Size = new System.Drawing.Size(260, 45);
+            this.lblMainCourse.Size = new System.Drawing.Size(168, 28);
             this.lblMainCourse.TabIndex = 36;
             this.lblMainCourse.Text = "Main Courses";
             // 
@@ -204,9 +215,10 @@
             // 
             this.lblShowCartnMenu.AutoSize = true;
             this.lblShowCartnMenu.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShowCartnMenu.Location = new System.Drawing.Point(813, 844);
+            this.lblShowCartnMenu.Location = new System.Drawing.Point(542, 540);
+            this.lblShowCartnMenu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblShowCartnMenu.Name = "lblShowCartnMenu";
-            this.lblShowCartnMenu.Size = new System.Drawing.Size(205, 45);
+            this.lblShowCartnMenu.Size = new System.Drawing.Size(130, 28);
             this.lblShowCartnMenu.TabIndex = 63;
             this.lblShowCartnMenu.Text = "Show Cart";
             // 
@@ -214,9 +226,10 @@
             // 
             this.btnIncrement.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnIncrement.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIncrement.Location = new System.Drawing.Point(368, 841);
+            this.btnIncrement.Location = new System.Drawing.Point(245, 538);
+            this.btnIncrement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnIncrement.Name = "btnIncrement";
-            this.btnIncrement.Size = new System.Drawing.Size(50, 50);
+            this.btnIncrement.Size = new System.Drawing.Size(33, 32);
             this.btnIncrement.TabIndex = 55;
             this.btnIncrement.Text = "+";
             this.btnIncrement.UseVisualStyleBackColor = true;
@@ -231,14 +244,14 @@
             this.dgvFoodMenu.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvFoodMenu.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvFoodMenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFoodMenu.Location = new System.Drawing.Point(968, 328);
-            this.dgvFoodMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvFoodMenu.Location = new System.Drawing.Point(645, 210);
+            this.dgvFoodMenu.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.dgvFoodMenu.Name = "dgvFoodMenu";
             this.dgvFoodMenu.ReadOnly = true;
             this.dgvFoodMenu.RowHeadersWidth = 82;
             this.dgvFoodMenu.RowTemplate.Height = 24;
             this.dgvFoodMenu.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgvFoodMenu.Size = new System.Drawing.Size(862, 415);
+            this.dgvFoodMenu.Size = new System.Drawing.Size(575, 266);
             this.dgvFoodMenu.TabIndex = 47;
             this.dgvFoodMenu.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFoodMenu_CellClick);
             // 
@@ -246,9 +259,10 @@
             // 
             this.lblFoodCategory.AutoSize = true;
             this.lblFoodCategory.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFoodCategory.Location = new System.Drawing.Point(17, 18);
+            this.lblFoodCategory.Location = new System.Drawing.Point(11, 12);
+            this.lblFoodCategory.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFoodCategory.Name = "lblFoodCategory";
-            this.lblFoodCategory.Size = new System.Drawing.Size(444, 60);
+            this.lblFoodCategory.Size = new System.Drawing.Size(270, 38);
             this.lblFoodCategory.TabIndex = 0;
             this.lblFoodCategory.Text = "Food Categories :";
             // 
@@ -267,17 +281,19 @@
             this.panelFoodCategories.Controls.Add(this.pbxBeverages);
             this.panelFoodCategories.Controls.Add(this.pbxMainCourse);
             this.panelFoodCategories.Controls.Add(this.lblFoodCategory);
-            this.panelFoodCategories.Location = new System.Drawing.Point(126, 328);
+            this.panelFoodCategories.Location = new System.Drawing.Point(84, 210);
+            this.panelFoodCategories.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelFoodCategories.Name = "panelFoodCategories";
-            this.panelFoodCategories.Size = new System.Drawing.Size(783, 415);
+            this.panelFoodCategories.Size = new System.Drawing.Size(523, 267);
             this.panelFoodCategories.TabIndex = 50;
             // 
             // pbxAll
             // 
             this.pbxAll.Image = global::IOOP_Assignment.Properties.Resources.allLogo;
-            this.pbxAll.Location = new System.Drawing.Point(33, 338);
+            this.pbxAll.Location = new System.Drawing.Point(22, 216);
+            this.pbxAll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbxAll.Name = "pbxAll";
-            this.pbxAll.Size = new System.Drawing.Size(45, 45);
+            this.pbxAll.Size = new System.Drawing.Size(30, 29);
             this.pbxAll.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxAll.TabIndex = 37;
             this.pbxAll.TabStop = false;
@@ -286,9 +302,10 @@
             // pbxDessert
             // 
             this.pbxDessert.Image = global::IOOP_Assignment.Properties.Resources.DessertLogo;
-            this.pbxDessert.Location = new System.Drawing.Point(30, 220);
+            this.pbxDessert.Location = new System.Drawing.Point(20, 141);
+            this.pbxDessert.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbxDessert.Name = "pbxDessert";
-            this.pbxDessert.Size = new System.Drawing.Size(45, 45);
+            this.pbxDessert.Size = new System.Drawing.Size(30, 29);
             this.pbxDessert.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxDessert.TabIndex = 39;
             this.pbxDessert.TabStop = false;
@@ -298,9 +315,10 @@
             // 
             this.pbxAppetizer.BackColor = System.Drawing.Color.Transparent;
             this.pbxAppetizer.Image = global::IOOP_Assignment.Properties.Resources.AppetizersLogo;
-            this.pbxAppetizer.Location = new System.Drawing.Point(31, 278);
+            this.pbxAppetizer.Location = new System.Drawing.Point(21, 178);
+            this.pbxAppetizer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbxAppetizer.Name = "pbxAppetizer";
-            this.pbxAppetizer.Size = new System.Drawing.Size(45, 45);
+            this.pbxAppetizer.Size = new System.Drawing.Size(30, 29);
             this.pbxAppetizer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxAppetizer.TabIndex = 36;
             this.pbxAppetizer.TabStop = false;
@@ -309,9 +327,10 @@
             // pbxBeverages
             // 
             this.pbxBeverages.Image = global::IOOP_Assignment.Properties.Resources.BeveragesLogo;
-            this.pbxBeverages.Location = new System.Drawing.Point(31, 155);
+            this.pbxBeverages.Location = new System.Drawing.Point(21, 99);
+            this.pbxBeverages.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbxBeverages.Name = "pbxBeverages";
-            this.pbxBeverages.Size = new System.Drawing.Size(45, 45);
+            this.pbxBeverages.Size = new System.Drawing.Size(30, 29);
             this.pbxBeverages.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxBeverages.TabIndex = 38;
             this.pbxBeverages.TabStop = false;
@@ -320,9 +339,10 @@
             // pbxMainCourse
             // 
             this.pbxMainCourse.Image = global::IOOP_Assignment.Properties.Resources.MainCourseLogo;
-            this.pbxMainCourse.Location = new System.Drawing.Point(30, 88);
+            this.pbxMainCourse.Location = new System.Drawing.Point(20, 56);
+            this.pbxMainCourse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbxMainCourse.Name = "pbxMainCourse";
-            this.pbxMainCourse.Size = new System.Drawing.Size(45, 45);
+            this.pbxMainCourse.Size = new System.Drawing.Size(30, 29);
             this.pbxMainCourse.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxMainCourse.TabIndex = 37;
             this.pbxMainCourse.TabStop = false;
@@ -332,18 +352,20 @@
             // 
             this.lblFoodMenunCart.AutoSize = true;
             this.lblFoodMenunCart.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFoodMenunCart.Location = new System.Drawing.Point(958, 227);
+            this.lblFoodMenunCart.Location = new System.Drawing.Point(639, 145);
+            this.lblFoodMenunCart.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFoodMenunCart.Name = "lblFoodMenunCart";
-            this.lblFoodMenunCart.Size = new System.Drawing.Size(317, 60);
+            this.lblFoodMenunCart.Size = new System.Drawing.Size(196, 38);
             this.lblFoodMenunCart.TabIndex = 49;
             this.lblFoodMenunCart.Text = "Food Menu :";
             // 
             // txtFoodSearch
             // 
             this.txtFoodSearch.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFoodSearch.Location = new System.Drawing.Point(126, 227);
+            this.txtFoodSearch.Location = new System.Drawing.Point(84, 145);
+            this.txtFoodSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtFoodSearch.Name = "txtFoodSearch";
-            this.txtFoodSearch.Size = new System.Drawing.Size(673, 68);
+            this.txtFoodSearch.Size = new System.Drawing.Size(450, 45);
             this.txtFoodSearch.TabIndex = 48;
             // 
             // lblCusFoodMenuandOrder
@@ -352,9 +374,10 @@
             this.lblCusFoodMenuandOrder.BackColor = System.Drawing.Color.Transparent;
             this.lblCusFoodMenuandOrder.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCusFoodMenuandOrder.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblCusFoodMenuandOrder.Location = new System.Drawing.Point(426, 41);
+            this.lblCusFoodMenuandOrder.Location = new System.Drawing.Point(284, 26);
+            this.lblCusFoodMenuandOrder.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCusFoodMenuandOrder.Name = "lblCusFoodMenuandOrder";
-            this.lblCusFoodMenuandOrder.Size = new System.Drawing.Size(1088, 93);
+            this.lblCusFoodMenuandOrder.Size = new System.Drawing.Size(683, 59);
             this.lblCusFoodMenuandOrder.TabIndex = 0;
             this.lblCusFoodMenuandOrder.Text = "Food Menu and Order Food";
             this.lblCusFoodMenuandOrder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -364,20 +387,11 @@
             this.panelFoodCart.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panelFoodCart.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelFoodCart.Controls.Add(this.lstOrderDetails);
-            this.panelFoodCart.Location = new System.Drawing.Point(968, 328);
+            this.panelFoodCart.Location = new System.Drawing.Point(645, 210);
+            this.panelFoodCart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelFoodCart.Name = "panelFoodCart";
-            this.panelFoodCart.Size = new System.Drawing.Size(862, 415);
+            this.panelFoodCart.Size = new System.Drawing.Size(576, 267);
             this.panelFoodCart.TabIndex = 59;
-            // 
-            // lblOrdertxt
-            // 
-            this.lblOrdertxt.AutoSize = true;
-            this.lblOrdertxt.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOrdertxt.Location = new System.Drawing.Point(345, 661);
-            this.lblOrdertxt.Name = "lblOrdertxt";
-            this.lblOrdertxt.Size = new System.Drawing.Size(244, 45);
-            this.lblOrdertxt.TabIndex = 51;
-            this.lblOrdertxt.Text = "Order Food :";
             // 
             // panel_header
             // 
@@ -386,7 +400,7 @@
             this.panel_header.Location = new System.Drawing.Point(0, 0);
             this.panel_header.Margin = new System.Windows.Forms.Padding(0);
             this.panel_header.Name = "panel_header";
-            this.panel_header.Size = new System.Drawing.Size(1900, 164);
+            this.panel_header.Size = new System.Drawing.Size(1267, 105);
             this.panel_header.TabIndex = 46;
             // 
             // pbxSearchMenu
@@ -394,9 +408,10 @@
             this.pbxSearchMenu.ErrorImage = global::IOOP_Assignment.Properties.Resources.SearchLogo;
             this.pbxSearchMenu.Image = global::IOOP_Assignment.Properties.Resources.SearchLogo;
             this.pbxSearchMenu.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbxSearchMenu.InitialImage")));
-            this.pbxSearchMenu.Location = new System.Drawing.Point(821, 227);
+            this.pbxSearchMenu.Location = new System.Drawing.Point(547, 145);
+            this.pbxSearchMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbxSearchMenu.Name = "pbxSearchMenu";
-            this.pbxSearchMenu.Size = new System.Drawing.Size(73, 68);
+            this.pbxSearchMenu.Size = new System.Drawing.Size(49, 44);
             this.pbxSearchMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxSearchMenu.TabIndex = 57;
             this.pbxSearchMenu.TabStop = false;
@@ -405,9 +420,10 @@
             // pbxShowCart
             // 
             this.pbxShowCart.Image = global::IOOP_Assignment.Properties.Resources.ShoppingCartLogo;
-            this.pbxShowCart.Location = new System.Drawing.Point(768, 849);
+            this.pbxShowCart.Location = new System.Drawing.Point(512, 543);
+            this.pbxShowCart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbxShowCart.Name = "pbxShowCart";
-            this.pbxShowCart.Size = new System.Drawing.Size(39, 35);
+            this.pbxShowCart.Size = new System.Drawing.Size(26, 22);
             this.pbxShowCart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxShowCart.TabIndex = 61;
             this.pbxShowCart.TabStop = false;
@@ -416,9 +432,10 @@
             // pbxShowMenu
             // 
             this.pbxShowMenu.Image = global::IOOP_Assignment.Properties.Resources.menuLogo;
-            this.pbxShowMenu.Location = new System.Drawing.Point(768, 849);
+            this.pbxShowMenu.Location = new System.Drawing.Point(512, 543);
+            this.pbxShowMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbxShowMenu.Name = "pbxShowMenu";
-            this.pbxShowMenu.Size = new System.Drawing.Size(39, 35);
+            this.pbxShowMenu.Size = new System.Drawing.Size(26, 22);
             this.pbxShowMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxShowMenu.TabIndex = 62;
             this.pbxShowMenu.TabStop = false;
@@ -426,7 +443,7 @@
             // 
             // CustomerOrderFoodMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnDecrement);
             this.Controls.Add(this.lblOrder);
@@ -438,16 +455,16 @@
             this.Controls.Add(this.pbxSearchMenu);
             this.Controls.Add(this.btnIncrement);
             this.Controls.Add(this.dgvFoodMenu);
-            this.Controls.Add(this.panelFoodCategories);
             this.Controls.Add(this.lblFoodMenunCart);
             this.Controls.Add(this.txtFoodSearch);
             this.Controls.Add(this.panelFoodCart);
-            this.Controls.Add(this.lblOrdertxt);
             this.Controls.Add(this.panel_header);
             this.Controls.Add(this.pbxShowMenu);
             this.Controls.Add(this.pbxShowCart);
+            this.Controls.Add(this.panelFoodCategories);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CustomerOrderFoodMenu";
-            this.Size = new System.Drawing.Size(1900, 913);
+            this.Size = new System.Drawing.Size(1267, 584);
             this.Load += new System.EventHandler(this.CustomerFoodMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFoodMenu)).EndInit();
             this.panelFoodCategories.ResumeLayout(false);
@@ -500,7 +517,6 @@
         private System.Windows.Forms.TextBox txtFoodSearch;
         private System.Windows.Forms.Label lblCusFoodMenuandOrder;
         private System.Windows.Forms.Panel panelFoodCart;
-        private System.Windows.Forms.Label lblOrdertxt;
         private System.Windows.Forms.Panel panel_header;
     }
 }
