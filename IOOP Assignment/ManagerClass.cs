@@ -482,7 +482,7 @@ namespace IOOP_Assignment
         }
 
         //Construct the query string from the filters
-        public string getquery()
+        private string getquery()
         {
             //Initialize the query
             string sqlquery = string.Empty;
