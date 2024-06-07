@@ -249,9 +249,9 @@
             "Multi Table",
             "Single Table"});
             this.clbType.Location = new System.Drawing.Point(275, 232);
-            this.clbType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.clbType.Margin = new System.Windows.Forms.Padding(4);
             this.clbType.Name = "clbType";
-            this.clbType.Size = new System.Drawing.Size(237, 160);
+            this.clbType.Size = new System.Drawing.Size(237, 192);
             this.clbType.TabIndex = 5;
             this.clbType.ThreeDCheckBoxes = true;
             this.clbType.Click += new System.EventHandler(this.clbType_Click);
@@ -342,7 +342,7 @@
             "Cancelled"});
             this.clbStatus.Location = new System.Drawing.Point(30, 232);
             this.clbStatus.Name = "clbStatus";
-            this.clbStatus.Size = new System.Drawing.Size(237, 128);
+            this.clbStatus.Size = new System.Drawing.Size(237, 160);
             this.clbStatus.TabIndex = 4;
             this.clbStatus.Click += new System.EventHandler(this.clbStatus_Click);
             this.clbStatus.SelectedIndexChanged += new System.EventHandler(this.clbStatus_SelectedIndexChanged);
@@ -418,7 +418,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnlView);
             this.Controls.Add(this.panel_header);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ManagerViewReservation";
             this.Size = new System.Drawing.Size(1425, 730);
             this.Load += new System.EventHandler(this.ManagerViewReservation_Load);
