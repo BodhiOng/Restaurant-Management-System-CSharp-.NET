@@ -1,6 +1,6 @@
 # Restaurant Management System (C# Windows Forms program)
 
-This project is C#-based restaurant management system developed as part of the CT044-3-1-IOOP (Introduction to Object-Oriented Programming) group assignment for the Asia Pacific University (APU) in 2024.
+This project is C#-based and MSSQL-based restaurant management system developed as part of the CT044-3-1-IOOP (Introduction to Object-Oriented Programming) group assignment for the Asia Pacific University (APU) in 2024.
 
 ## How to run the program
 Using Visual Studio, open the solution `IOOP Assignment.sln` and you can either Run the solution with (F5) or without debugging (Ctrl + F5).
